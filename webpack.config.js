@@ -23,7 +23,6 @@ module.exports = {
     ]
   },
   plugins: [
-    new CopyPlugin([{from: 'data', to: 'data'}]),
     new HtmlPlugin({
       template: 'index.html'
     })

@@ -39,7 +39,6 @@ self.importScripts(
     // update URL to point to Amazon Location
     url.pathname = `/maps/v0/maps/${path[0]}/tiles/${path.slice(1).join("/")}`;
     url.host = `maps.geo.${region}.amazonaws.com`;
-    // strip params (Tangram generates an empty api_key param)
     url.search = "";
    
     const signed = Signer.signUrl(url.toString(), {
@@ -54,7 +53,7 @@ self.importScripts(
   self.addEventListener("fetch", (event) => {
     const { request } = event;
    
-    // match the synthetic hostname we're telling Tangram to use
+    // match the synthetic hostname we need to use
     if (request.url.includes("amazon.location")) {
       return event.respondWith(signedFetch(request));
     }

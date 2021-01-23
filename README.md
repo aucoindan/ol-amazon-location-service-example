@@ -1,10 +1,12 @@
 # ol-amazon-location-service-example
 Amazon Location Service Example Using Open Layers
 
-KNOWNM ISSUES:
+KNOWN ISSUES:
 - CORS error in browsers after a couple of minutes (workaround: refresh page)
 
 Directions:
+
+setup a cognito identi
 
 ```
 git pull

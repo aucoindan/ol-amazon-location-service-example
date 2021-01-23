@@ -6,8 +6,6 @@ KNOWN ISSUES:
 
 Directions:
 
-setup a cognito identi
-
 ```
 git pull
 

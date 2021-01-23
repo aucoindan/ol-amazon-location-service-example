@@ -8,9 +8,9 @@ import { fromLonLat } from 'ol/proj';
 import AWS from 'aws-sdk';
 
 // Cognito Identity Pool ID
-const identityPoolId = "us-east-1:9d93f234-a64b-4c55-a2da-78a8f6ba8e8a";
+const identityPoolId = "[CognitoIdentityPoolID]";
 // Amazon Location Service map name; must be HERE-backed
-const mapName = "LocationServiceDemo";
+const mapName = "[MapName]";
 
 // extract the region from the Identity Pool ID; this will be used for both Amazon Cognito and Amazon Location
 AWS.config.region = identityPoolId.split(":", 1)[0];
